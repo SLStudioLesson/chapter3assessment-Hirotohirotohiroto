@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecipeUI {
+public class RecipeUI implements DataHandler {
     private BufferedReader reader;
     private DataHandler dataHandler;
 

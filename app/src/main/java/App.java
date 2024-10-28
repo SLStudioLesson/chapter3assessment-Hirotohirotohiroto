@@ -14,6 +14,16 @@ public class App {
             System.out.println("2. JSON");
             System.out.print("Select (1/2): ");
             String choice = reader.readLine();
+            //入力に沿って以下処理を実施
+            if(choice.equals("1")) {
+                CSVDataHandler c1 = new CSVDataHandler();
+                
+            }else if(choice.equals("2")) {
+                JSONDataHandler j1 = new JSONDataHandler();
+            }else {
+                CSVDataHandler c2 = new CSVDataHandler();
+            }
+            
             
 
         } catch (Exception e) {
