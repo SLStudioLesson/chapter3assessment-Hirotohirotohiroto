@@ -5,8 +5,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import com.recipeapp.dataHandler.DataHandler;
 
-public class RecipeUI implements DataHandler {
+
+public class RecipeUI {
     private BufferedReader reader;
     private DataHandler dataHandler;
 
@@ -49,5 +51,13 @@ public class RecipeUI implements DataHandler {
                 System.out.println("Error reading input from user: " + e.getMessage());
             }
         }
+    }
+    //DataHandlerから読み込んだレシピデータを整形してコンソールに表示
+    private void displayRecipes() {
+        System.out.println("Recipes:");
+        System.out.println("-----------------------------------");
+
+        ArrayList<Recipe> dd = dataHandler.readData();
+
     }
 }

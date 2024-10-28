@@ -17,7 +17,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import com.recipeapp.datahandler.DataHandler;
+import com.recipeapp.dataHandler.DataHandler;
 import com.recipeapp.model.Ingredient;
 import com.recipeapp.model.Recipe;
 

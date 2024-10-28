@@ -1,6 +1,11 @@
-package com.recipeapp.datahandler;
+package com.recipeapp.dataHandler;
 
 import java.util.ArrayList;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 import com.recipeapp.model.Recipe;
 
@@ -21,7 +26,17 @@ public class CSVDataHandler implements DataHandler {
     }
 
     @Override
-    public ArrayList<Recipe> readData(){
+    public ArrayList<Recipe> readData() throws IOException {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            ArrayList<Recipe> list = new ArrayList<>();
+            while ((line = reader.readLine()) != null) {
+                
+            }
+            return list;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return null;
     }
 

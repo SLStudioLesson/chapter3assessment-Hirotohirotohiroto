@@ -1,10 +1,10 @@
-package com.recipeapp.datahandler;
+package com.recipeapp.dataHandler;
 
 import java.util.ArrayList;
 
 import com.recipeapp.model.Recipe;
 
-public class JSONDataHandler {
+public class JSONDataHandler implements DataHandler{
     public String getMode() {
         return "JSON";
     }
